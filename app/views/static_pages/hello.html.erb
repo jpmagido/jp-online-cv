@@ -55,14 +55,37 @@
 
 		<p>Projet 1</p>
 		<% @projects.each do |p|%>
-			<%= p.name%>
-			<%= p.nature%>
-			<%= p.duration%>
+		<div id="cadre">
+			<div id="card-head">
+				<div id="titre-card"><%= p.nature%></div>
+			
+			</div>
+			<div id="card-img-3">
+				IMG
+			</div>
+			<div id="card-description">
+				<h5>Description du projet: <%= p.name%></h5>
+				<div id="card-text"><%= p.description%></div>
+				<div id="card-info">
+					<small>Durée: <%= p.duration%> mois</small>
+					<small>Livraison: <%= p.livraison %></small>
+				</div>
+			</div>
+			
+			<div id="card-links-1">
+				<a href=<%= p.url%>>Website link</a>
+				<a href="#" >Repo Link</a>
+			</div>
+		</div>
+
+		
+			
+						
 			<%= p.client%>
 			<%= p.level%>
-			<%= p.description%>
-			<%= p.url%>
-			<%= p.livraison%>
+			
+			
+			
 		<%end%>
 		<p>Projet 2</p>
 		<p>Projet 3</p>

@@ -107,11 +107,106 @@ color: #BCBDC4;
 #div-projects {
 	background-color: #DDDEE6;
 }
+/* SKILLS PAGE */
+
+
+/* CARDS PROJECTS  */
+
+#div-atome-index{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+
+#index-body{
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+#cadre{
+	border-style: solid;
+	height: 550px;
+	width: 500px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	background-color: #DBE6FF;
+	margin: 40px 25px 0 0;
+
+}
+
+#card-head{
+	display: flex;
+	justify-content: space-between;
+	background-color: #D8D7DB;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+
+#titre-card{
+	font-size: xx-large;
+	padding: 3px 0 3px 0;
+	margin: auto;
+}
 
 
 
+#card-img-3{
+	height: 200px;
+	border-width: 1px;
+	border-style: solid;
+	margin: 8px;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 50px;
+	padding-top: 50px;
+}
 
+#card-description{
+	height: 150px;
+	padding: 0 10px 0 10px;
+	margin: 10px;
+	border-width: 1px;
+	border-style: solid;
+	background-color: white;
+	border-radius: 8px;
+}
 
+#card-description h5 {
+	text-decoration: underline;
+}
+
+#card-text{
+	padding: 0px;
+	margin-bottom: 10px;
+}
+#card-info{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+#card-links{
+
+	border-radius: 8px;
+	border: solid;
+
+}
+
+#card-links-1{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+	width: 100%;
+	
+}
+
+#logo-index{
+	padding: 5px;
+
+}
+
+/* CARDS PROJECTS  */
 
 
 
