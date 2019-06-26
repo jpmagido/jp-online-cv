@@ -4,10 +4,11 @@
 		Even if Bootstrap is my friend, this Front-End is home-made.
 	</div>
 	
-	<div id="code-title">My code is </div>
+	<div id="code-title">my_code = </div>
 	<div id="div-sub-1">
 		<div id="div-skill-logo">
-			<div>
+			<a>[</a>
+			<div> 
 				<div id="logo-bis">
 					<i class="far fa-lightbulb fa-6x"></i>
 				</div>
@@ -16,7 +17,7 @@
 					SMART
 				</div>
 			</div>
-			
+			<a>,</a>
 			<div>
 				<div id="logo-bis">
 					<i class="far fa-smile-wink fa-6x"></i>
@@ -26,7 +27,7 @@
 					FRIENDLY 
 				</div>
 			</div>
-
+			<a>,</a>
 			<div>
 				<div id="logo-bis">
 					<i class="fas fa-cog fa-6x"></i>
@@ -36,7 +37,7 @@
 					EFFICIENT 
 				</div>
 			</div>
-			
+			<a>,</a>
 			<div>
 				<div id="logo-bis">
 					<i class="fas fa-shipping-fast fa-6x"></i>
@@ -46,49 +47,44 @@
 					ON TIME ! 
 				</div>
 			</div>
+			<a>]</a>
 		</div>
 	</div>
 
 	<div id="div-projects">
 
-		<div id="code-title">Projects</div>
-
-		<p>Projet 1</p>
-		<% @projects.each do |p|%>
-		<div id="cadre">
-			<div id="card-head">
-				<div id="titre-card"><%= p.nature%></div>
-			
-			</div>
-			<div id="card-img-3">
-				IMG
-			</div>
-			<div id="card-description">
-				<h5>Description du projet: <%= p.name%></h5>
-				<div id="card-text"><%= p.description%></div>
-				<div id="card-info">
-					<small>Durée: <%= p.duration%> mois</small>
-					<small>Livraison: <%= p.livraison %></small>
-				</div>
-			</div>
-			
-			<div id="card-links-1">
-				<a href=<%= p.url%>>Website link</a>
-				<a href="#" >Repo Link</a>
-			</div>
+		<div id="code-title">loop {Projects}</div>
+		<div id="all-cards">
+			<% @projects.each do |p|%>
+				<div id="cadre">
+					<div id="card-head">
+						<div id="titre-card"><%= p.nature%></div>
+					</div>
+					<div id="card-img-3">
+						<%= image_tag("#{p.name}.png", style: "width: 100%; height:100%; border-radius: 8px;" )%>
+					</div>
+					<div id="card-description">
+						<h5>Description du projet: <%= p.name%></h5>
+						<div id="card-text"><%= p.description%></div>
+						<hr>
+						<div id="card-info">
+							<small><a>Durée:</a> <%= p.duration%> mois</small>
+							<small><a>Difficulté:</a> <%= p.level%> /10</small>
+							
+						</div>
+						<div id="card-info">
+							<small><a>Client:</a> <%= p.client%> </small>
+							<small><a>Livraison:</a> <%= time(p.livraison)%></small>
+						</div>
+					</div>
+					
+					<div id="card-links-1">
+						<a href=<%= p.url%>>Website link</a>
+						<a href="#" >Repo Link</a>
+					</div>
+				</div>	
+			<%end%>
 		</div>
-
-		
-			
-						
-			<%= p.client%>
-			<%= p.level%>
-			
-			
-			
-		<%end%>
-		<p>Projet 2</p>
-		<p>Projet 3</p>
 	</div>
 
 

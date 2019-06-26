@@ -57,6 +57,13 @@ color: #BCBDC4;
 	margin-top: 50px;
 	color: #9B111E;
 }
+
+#logo a {
+	color: #9B111E;
+}
+#logo a:hover {
+	color: #BCBDC4;
+}
 /* LANDING PAGE */
 
 /* SKILLS PAGE */
@@ -65,9 +72,6 @@ color: #BCBDC4;
 	
 }
 
-#div-sub-1 {
-	color: #9B111E;
-}
 
 #text-bootstrap {
 	text-align: center;
@@ -81,7 +85,7 @@ color: #BCBDC4;
 	text-align: center;
 	padding: 40px 0 90px 0;
 	margin-top: 40px;
-	font-size: 50px;
+	font-size: 70px;
 }
 
 #div-skill-logo {
@@ -90,10 +94,18 @@ color: #BCBDC4;
 	margin: 30px 10px 100px 10px;
 }
 
+#div-skill-logo a {
+	font-size: 140px;
+}
+
 #logo-bis {
 
 	text-align: center;
 
+}
+
+#logo-bis, #text-under-logo {
+	color: #9B111E;
 }
 
 #text-under-logo {
@@ -104,69 +116,69 @@ color: #BCBDC4;
 }
 
 
-#div-projects {
-	background-color: #DDDEE6;
-}
+
 /* SKILLS PAGE */
 
 
 /* CARDS PROJECTS  */
+#div-projects {
+	background-color: #DDDEE6;
+	width: 100%;
 
-#div-atome-index{
-	display: flex;
-	flex-direction: column;
-	width: 200px;
-}
-
-#index-body{
-	display: flex;
-	flex-wrap: wrap; 
 }
 
 #cadre{
 	border-style: solid;
-	height: 550px;
+	height: 590px;
 	width: 500px;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
-	background-color: #DBE6FF;
-	margin: 40px 25px 0 0;
+	background-color: #426A83;
+	padding: 8px 0 8px 0; 
+	margin: auto;
 
 }
 
-#card-head{
+#all-cards {
 	display: flex;
-	justify-content: space-between;
-	background-color: #D8D7DB;
-	border-bottom-width: 2px;
-	border-bottom-style: solid;
+	flex-wrap: wrap;
+	padding: 20px;
+	margin: auto;
+}
+
+#card-head{
+	text-align: center;
+	margin: 0 8px 0 8px;
+	border-radius: 5px;
+	background-color: white;
+	border-width: 1px;
+	border-style: solid;
+
 }
 
 
 #titre-card{
 	font-size: xx-large;
-	padding: 3px 0 3px 0;
+	padding: 13px;
 	margin: auto;
 }
 
 
 
 #card-img-3{
-	height: 200px;
+	height: 250px;
 	border-width: 1px;
 	border-style: solid;
 	margin: 8px;
 	border-radius: 8px;
-	text-align: center;
-	font-size: 50px;
-	padding-top: 50px;
 }
 
+
 #card-description{
-	height: 150px;
+	height: 200px;
 	padding: 0 10px 0 10px;
-	margin: 10px;
+	margin: 8px;
 	border-width: 1px;
 	border-style: solid;
 	background-color: white;
@@ -184,7 +196,11 @@ color: #BCBDC4;
 #card-info{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 25px;
+	margin-top: 15px;
+}
+
+#card-info a {
+	text-decoration: underline;
 }
 #card-links{
 
@@ -205,6 +221,7 @@ color: #BCBDC4;
 	padding: 5px;
 
 }
+
 
 /* CARDS PROJECTS  */
 
