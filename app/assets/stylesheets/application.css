@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+header { 
+  background-image: url('/assets/WP_1.jpg'); 
+  height: 100%;
+
+}
+
+#landing {
+
+color: #BCBDC4;
+}
+
+#text-landing {
+	font-family: 'Lucida Console', Monaco, monospace;
+	font-size: xx-large;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+#text-name {
+	padding: 10% 0 10px 0;
+}
+
+#text-name a {
+	color: #530F0A;
+}
+
+#text-details a{
+	color: #9B111E;
+}
+
+#logo {
+	margin-top: 50px;
+	color: #9B111E;
+}
