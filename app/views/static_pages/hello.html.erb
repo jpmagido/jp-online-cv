@@ -1,24 +1,90 @@
+<div id="main-body-div">
+	
+	<div id="text-bootstrap">
+		Even if Bootstrap is my friend, this Front-End is home-made.
+	</div>
+	
+	<div id="code-title">My code is </div>
+	<div id="div-sub-1">
+		<div id="div-skill-logo">
+			<div>
+				<div id="logo-bis">
+					<i class="far fa-lightbulb fa-6x"></i>
+				</div>
+
+				<div id="text-under-logo"> 
+					SMART
+				</div>
+			</div>
+			
+			<div>
+				<div id="logo-bis">
+					<i class="far fa-smile-wink fa-6x"></i>
+				</div>
+
+				<div id="text-under-logo"> 
+					FRIENDLY 
+				</div>
+			</div>
+
+			<div>
+				<div id="logo-bis">
+					<i class="fas fa-cog fa-6x"></i>
+				</div>
+
+				<div id="text-under-logo"> 
+					EFFICIENT 
+				</div>
+			</div>
+			
+			<div>
+				<div id="logo-bis">
+					<i class="fas fa-shipping-fast fa-6x"></i>
+				</div>
+
+				<div id="text-under-logo"> 
+					ON TIME ! 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="div-projects">
+
+		<div id="code-title">Projects</div>
+
+		<p>Projet 1</p>
+		<% @projects.each do |p|%>
+			<%= p.name%>
+			<%= p.nature%>
+			<%= p.duration%>
+			<%= p.client%>
+			<%= p.level%>
+			<%= p.description%>
+			<%= p.url%>
+			<%= p.livraison%>
+		<%end%>
+		<p>Projet 2</p>
+		<p>Projet 3</p>
+	</div>
 
 
+	<div>
+		<h3>Skills</h3>
+		<p>Management vs. Specialist</p>
+		<p>recruitment</p>
+	</div>
 
-<p>Even if Bootstrap is my friend, I can handle myself in Front-End.</p>
+	<div>
+		<h3>Activity</h3>
 
-<h3>Projects</h3>
+		<p>Human Talent</p>
+		<p>Computer_talking</p>
+	</div>
 
-<p>Projet 1</p>
-<p>Projet 2</p>
-<p>Projet 3</p>
+	<div>
+		<h3>Contact</h3>
 
-<h3>Skills</h3>
-<p>Management vs. Specialist</p>
-<p>recruitment</p>
-
-<h3>Activity</h3>
-
-<p>Human Talent</p>
-<p>Computer_talking</p>
-
-<h3>Contact</h3>
-
-<p>mailer</p>
-
+		<p>mailer</p>
+	</div>
+</div>

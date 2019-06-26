@@ -17,6 +17,7 @@
 html, body {
 	height: 100%;
 	margin: 0;
+	font-family: 'Lucida Console', Monaco, monospace;
 }
 
 header { 
@@ -25,13 +26,14 @@ header {
 
 }
 
+ /* LANDING PAGE */
 #landing {
 
 color: #BCBDC4;
 }
 
 #text-landing {
-	font-family: 'Lucida Console', Monaco, monospace;
+	
 	font-size: xx-large;
 	display: flex;
 	flex-direction: column;
@@ -55,3 +57,69 @@ color: #BCBDC4;
 	margin-top: 50px;
 	color: #9B111E;
 }
+/* LANDING PAGE */
+
+/* SKILLS PAGE */
+
+#main-body-div {
+	
+}
+
+#div-sub-1 {
+	color: #9B111E;
+}
+
+#text-bootstrap {
+	text-align: center;
+	padding: 20px 0 20px 0;
+	font-style: italic;
+	font-size: large;
+	background-color: #DDDEE6;
+}
+
+#code-title {
+	text-align: center;
+	padding: 40px 0 90px 0;
+	margin-top: 40px;
+	font-size: 50px;
+}
+
+#div-skill-logo {
+	display: flex;
+	justify-content: space-around;
+	margin: 30px 10px 100px 10px;
+}
+
+#logo-bis {
+
+	text-align: center;
+
+}
+
+#text-under-logo {
+	align-items: center;
+	margin-top: 20px;
+	font-size: x-large;
+
+}
+
+
+#div-projects {
+	background-color: #DDDEE6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
