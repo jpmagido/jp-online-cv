@@ -122,6 +122,8 @@ color: #BCBDC4;
 	justify-content: space-around;
 	height: 500px;
 	margin-top: 205px;
+	padding-top: 50px;
+	background-color: #DDDEE6;
 
 }
 
@@ -168,12 +170,12 @@ color: #BCBDC4;
 	flex-direction: row; 
 	margin-bottom: 20px;
 	border-radius: 10px;
-	background-color: #DDDEE6;
+	background-color: #ABABAB;
 
 }
 
 #bar-name {
-	background-color: #DDDEE6;
+	background-color: #ABABAB;
 	width: 100px;
 	padding: 5px ;
 	border-radius: 10px;
@@ -217,7 +219,7 @@ color: #BCBDC4;
 
 /* CARDS PROJECTS  */
 #div-projects {
-	background-color: #DDDEE6;
+	
 	width: 100%;
 
 }
