@@ -1,7 +1,7 @@
 <div id="main-body-div">
 	
 	<div id="text-bootstrap">
-		Even if Bootstrap is my friend, this Front-End is home-made.
+		Even though Bootstrap is a friend of mine, this page is home-made.
 	</div>
 	
 	<div id="code-title">my_code = </div>
@@ -50,6 +50,57 @@
 			<a>]</a>
 		</div>
 	</div>
+	<div id="div-sub-2">
+		<div id="div-photo">
+			<div id="div-skills-title"> self.inspect </div>
+			<div id="div-photo-true"><%= image_tag("jpm.jpg", style: "width: 100%; height:100%; border-radius: 8px;" )%></div>
+
+			<div id="div-photo-text">
+				Who is this young man ?! ❤
+			</div>
+			<div id="div-photo-text">
+				<a href="https://github.com/jpmagido"><i class="fab fa-github fa-2x"></i></a>
+				<a href="https://twitter.com/Jpmagido"><i class="fab fa-twitter-square fa-2x"></i></a>
+				<a href="https://join.slack.com/t/humantalentgroupe/shared_invite/enQtNjcxNDQ4OTk3MzEzLWQ3Y2Y0MmJkMjBlYzc4NmNiMzNkYTU2N2Q0M2JjNTc1YWYyNjI2MmVmN2I5NTM4Y2Q2ZjMzNWRjOTIzZjU0ZDE"><i class="fab fa-slack fa-2x"></i></a>
+				<a href="https://www.linkedin.com/in/jean-philippe-magido-8873bb97/"><i class="fab fa-linkedin fa-2x"></i></a>
+				<a href="#"><i class="fas fa-envelope-square fa-2x"></i></a>
+			</div>
+		</div>
+		<div id="div-skills-bars">
+			<div id="div-skills-title"> Skill bars </div>
+			<div id="bars-all">
+				<div id="bar-large">
+					<div id="bar-name"> HTML </div>
+					<div id="bar-medium"></div>
+					<div id="bar-small-90"></div>
+					
+				</div>
+				<div id="bar-large">
+					<div id="bar-name"> CSS </div>
+					<div id="bar-medium"></div>
+					<div id="bar-small-70"></div>
+					
+				</div>
+				<div id="bar-large">
+					<div id="bar-name"> RUBY/Rails </div>
+					<div id="bar-medium"></div>
+					<div id="bar-small-70"></div>
+					
+				</div>
+				<div id="bar-large">
+					<div id="bar-name"> JavaScript </div>
+					<div id="bar-medium"></div>
+					<div id="bar-small-20"></div>
+					
+				</div>
+				<div id="bar-large">
+					<div id="bar-name"> UI Design </div>
+					<div id="bar-medium"></div>
+					<div id="bar-small-50"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div id="div-projects">
 
@@ -64,17 +115,17 @@
 						<%= image_tag("#{p.name}.png", style: "width: 100%; height:100%; border-radius: 8px;" )%>
 					</div>
 					<div id="card-description">
-						<h5>Description du projet: <%= p.name%></h5>
+						<h5>Project's description: <%= p.name%></h5>
 						<div id="card-text"><%= p.description%></div>
 						<hr>
 						<div id="card-info">
-							<small><a>Durée:</a> <%= p.duration%> mois</small>
-							<small><a>Difficulté:</a> <%= p.level%> /10</small>
+							<small><a>Duration:</a> <%= p.duration%> month</small>
+							<small><a>Complexity:</a> <%= p.level%> /10</small>
 							
 						</div>
 						<div id="card-info">
 							<small><a>Client:</a> <%= p.client%> </small>
-							<small><a>Livraison:</a> <%= time(p.livraison)%></small>
+							<small><a>Delivery:</a> <%= time(p.livraison)%></small>
 						</div>
 					</div>
 					

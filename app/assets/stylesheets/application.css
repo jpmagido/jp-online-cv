@@ -83,8 +83,7 @@ color: #BCBDC4;
 
 #code-title {
 	text-align: center;
-	padding: 40px 0 90px 0;
-	margin-top: 40px;
+	padding: 60px 0 60px 0;
 	font-size: 70px;
 }
 
@@ -114,10 +113,106 @@ color: #BCBDC4;
 	font-size: x-large;
 
 }
-
-
-
 /* SKILLS PAGE */
+
+/* SKILLS PAGE BIS */
+
+#div-sub-2 {
+	display: flex;
+	justify-content: space-around;
+	height: 500px;
+	margin-top: 205px;
+
+}
+
+#div-skills-title {
+	text-align: center;
+	margin: 20px 0 20px 0;
+	font-size: 40px;
+}
+#div-photo {
+
+	height: 430px;
+	width: 350px;
+}
+#div-photo-true {
+	height: 250px;
+	width: 250px;
+	margin: auto;
+}
+#div-photo-text {
+	text-align: center;
+	margin: 15px 0 15px 0;
+}
+#div-photo-text a {
+	color: #9B111E;
+}
+#div-photo-text a:hover {
+	color: black;
+}
+#div-skills-bars {
+	
+	height: 300px;
+	width: 600px;
+	min-width: 600px;
+
+}
+#bars-all {
+	margin-top: 60px;
+
+}
+#bar-large {
+	
+	height: 25px;
+	display: flex;
+	flex-direction: row; 
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: #DDDEE6;
+
+}
+
+#bar-name {
+	background-color: #DDDEE6;
+	width: 100px;
+	padding: 5px ;
+	border-radius: 10px;
+	
+
+}
+#bar-medium {
+
+	height: 25px;
+
+	
+}
+
+#bar-small-90 {
+	height: 25px;
+	width: 70%;
+	background-color: #9B111E;
+}
+
+#bar-small-50 {
+	height: 25px;
+	width: 35%;
+	background-color: #9B111E;
+}
+#bar-small-70 {
+	height: 25px;
+	width: 50%;
+	background-color: #9B111E;
+}
+#bar-small-20 {
+	height: 25px;
+	width: 20%;
+	background-color: #9B111E;
+}
+
+
+
+/* SKILLS PAGE BIS */
+
 
 
 /* CARDS PROJECTS  */
