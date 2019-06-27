@@ -21,7 +21,7 @@ html, body {
 }
 
 header { 
-  background-image: url('/assets/WP_1.jpg'); 
+  background-image: url('_assets/WP_1.jpg'); 
   height: 100%;
 
 }
