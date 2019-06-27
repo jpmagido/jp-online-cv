@@ -21,6 +21,7 @@ end
 def perform
 	destroy
 	projects
+	puts "Seed done"
 end
 
 perform
