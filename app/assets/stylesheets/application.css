@@ -87,6 +87,12 @@ color: #BCBDC4;
 	font-size: 70px;
 }
 
+#div-footer {
+	text-align: center;
+	padding: 30px 0 0 0;
+	font-size: 40px;
+}
+
 #div-skill-logo {
 	display: flex;
 	justify-content: space-around;
