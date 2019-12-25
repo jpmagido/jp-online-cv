@@ -150,7 +150,7 @@ header {
   color: black;
 }
 #div-skills-bars {
-  height: 300px;
+  height: 350px;
   width: 600px;
   min-width: 600px;
 }
@@ -196,6 +196,18 @@ header {
   height: 25px;
   width: 20%;
   background-color: #9b111e;
+}
+
+#my-resume {
+  text-align: center;
+  margin-top: 80px;
+  font-size: large;
+}
+#my-resume a {
+  color: #9b111e;
+}
+#my-resume:hover a {
+  color: black;
 }
 
 /* SKILLS PAGE BIS */
