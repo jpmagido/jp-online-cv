@@ -65,12 +65,22 @@ header {
 #logo a:hover {
   color: #bcbdc4;
 }
+
+.hidden-blog {
+  margin-left: 20px;
+  position: absolute;
+  top: 20px;
+  color: #9b111e;
+  visibility: hidden;
+}
+
+.hidden-blog:hover {
+  color: black;
+}
+
 /* LANDING PAGE */
 
 /* SKILLS PAGE */
-
-#main-body-div {
-}
 
 #text-bootstrap {
   text-align: center;

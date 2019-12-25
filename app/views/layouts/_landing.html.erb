@@ -1,7 +1,8 @@
 <div id="landing">
+<div> <%= link_to 'Secret Page', blog_pages_home_path, class: 'hidden-blog' %></div>
 	<div id="text-landing">
 		<div id="text-name"> 
-			Hi, I'm <a>JP</a>.
+			Hi, I'm <a onclick="hiddenLink()">JP</a>.
 		</div>
 		<div id="text-details"> 
 			I'm a Back-end Web Developer & I love <a>Ruby</a> !!
@@ -10,3 +11,9 @@
 	</div>
 
 </div>
+
+<script>
+	function hiddenLink() {
+  	$(".hidden-blog").css("visibility", "visible");
+	}
+</script>
