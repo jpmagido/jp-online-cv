@@ -63,7 +63,8 @@
 				<a href="https://twitter.com/Jpmagido"><i class="fab fa-twitter-square fa-2x"></i></a>
 				<a href="https://join.slack.com/t/humantalentgroupe/shared_invite/enQtNjcxNDQ4OTk3MzEzLWQ3Y2Y0MmJkMjBlYzc4NmNiMzNkYTU2N2Q0M2JjNTc1YWYyNjI2MmVmN2I5NTM4Y2Q2ZjMzNWRjOTIzZjU0ZDE"><i class="fab fa-slack fa-2x"></i></a>
 				<a href="https://www.linkedin.com/in/jean-philippe-magido-8873bb97/"><i class="fab fa-linkedin fa-2x"></i></a>
-				<a href="#"><i class="fas fa-envelope-square fa-2x"></i></a>
+				<a id="mail_to_icon" href="mailto:jpmagido@me.com"><i id="onclique-hover" class="fas fa-envelope-square fa-2x"></i></a>
+				<p class="hover-text">jpmagido@me.com</p>
 			</div>
 		</div>
 		<div id="div-skills-bars">
@@ -119,7 +120,7 @@
 						<div id="card-text"><%= p.description%></div>
 						<hr>
 						<div id="card-info">
-							<small><a>Duration:</a> <%= p.duration%> month</small>
+							<small><a>Duration:</a> <%= p.duration%> weeks</small>
 							<small><a>Complexity:</a> <%= p.level%> /10</small>
 							
 						</div>
@@ -131,7 +132,7 @@
 					
 					<div id="card-links-1">
 						<a href=<%= p.url%>>Website link</a>
-						<a href="#" >Repo Link</a>
+						<a href=<%= p.github_url%> >Repo Link</a>
 					</div>
 				</div>	
 			<%end%>
@@ -140,16 +141,35 @@
 
 
 	<div id="div-activity">
-		<div id="div-footer"><div id="div-photo-text">
+		<div id="div-footer">
+			<div id="div-photo-text">
 				<a href="https://github.com/jpmagido"><i class="fab fa-github fa-2x"></i></a>
 				<a href="https://twitter.com/Jpmagido"><i class="fab fa-twitter-square fa-2x"></i></a>
 				<a href="https://join.slack.com/t/humantalentgroupe/shared_invite/enQtNjcxNDQ4OTk3MzEzLWQ3Y2Y0MmJkMjBlYzc4NmNiMzNkYTU2N2Q0M2JjNTc1YWYyNjI2MmVmN2I5NTM4Y2Q2ZjMzNWRjOTIzZjU0ZDE"><i class="fab fa-slack fa-2x"></i></a>
 				<a href="https://www.linkedin.com/in/jean-philippe-magido-8873bb97/"><i class="fab fa-linkedin fa-2x"></i></a>
-				<a href="mailto:jpmagido@me.com"><i class="fas fa-envelope-square fa-2x"></i></a>
-			</div></div>
-		
-
-		
-
+				<a href="mailto:jpmagido@me.com"><i id="onclique-hover2" class="fas fa-envelope-square fa-2x"></i></a>
+				<p class="hover-text2">jpmagido@me.com</p>
+			</div>
+		</div>
 	</div>
 </div>
+
+<script>
+$("#onclique-hover").mouseover(function() {
+	$(".hover-text").css("visibility", "visible");
+	});
+
+$("#onclique-hover").mouseout(function() {
+  $(".hover-text").css("visibility", "hidden");
+});
+</script>
+
+<script>
+$("#onclique-hover2").mouseover(function() {
+	$(".hover-text2").css("visibility", "visible");
+	});
+
+$("#onclique-hover2").mouseout(function() {
+  $(".hover-text2").css("visibility", "hidden");
+});
+</script>

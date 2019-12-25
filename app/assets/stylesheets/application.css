@@ -14,339 +14,308 @@
  *= require_self
  */
 
-html, body {
-	height: 100%;
-	margin: 0;
-	font-family: 'Lucida Console', Monaco, monospace;
-}
-
-header { 
-  background-image: url('WP_1.jpg');
+html,
+body {
   height: 100%;
-
+  margin: 0;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
- /* LANDING PAGE */
-#landing {
+header {
+  background-image: url("WP_1.jpg");
+  height: 100%;
+}
 
-color: #BCBDC4;
+/* LANDING PAGE */
+#landing {
+  color: #bcbdc4;
 }
 
 #text-landing {
-	
-	font-size: xx-large;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 #text-name {
-	padding: 10% 0 10px 0;
+  padding: 10% 0 10px 0;
 }
 
 #text-name a {
-	color: #530F0A;
+  color: #530f0a;
 }
 
-#text-details a{
-	color: #9B111E;
+#text-details a {
+  color: #9b111e;
 }
 
 #logo {
-	margin-top: 50px;
-	color: #9B111E;
+  margin-top: 50px;
+  color: #9b111e;
 }
 
 #logo a {
-	color: #9B111E;
+  color: #9b111e;
 }
 #logo a:hover {
-	color: #BCBDC4;
+  color: #bcbdc4;
 }
 /* LANDING PAGE */
 
 /* SKILLS PAGE */
 
 #main-body-div {
-	
 }
 
-
 #text-bootstrap {
-	text-align: center;
-	padding: 20px 0 20px 0;
-	font-style: italic;
-	font-size: large;
-	background-color: #DDDEE6;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  font-style: italic;
+  font-size: large;
+  background-color: #dddee6;
 }
 
 #code-title {
-	text-align: center;
-	padding: 60px 0 60px 0;
-	font-size: 70px;
+  text-align: center;
+  padding: 60px 0 60px 0;
+  font-size: 70px;
 }
 
 #div-footer {
-	text-align: center;
-	padding: 30px 0 0 0;
-	font-size: 40px;
+  text-align: center;
+  padding: 30px 0 0 0;
+  font-size: 40px;
 }
 
 #div-skill-logo {
-	display: flex;
-	justify-content: space-around;
-	margin: 30px 10px 100px 10px;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 10px 100px 10px;
 }
 
 #div-skill-logo a {
-	font-size: 140px;
+  font-size: 140px;
 }
 
 #logo-bis {
-
-	text-align: center;
-
+  text-align: center;
 }
 
-#logo-bis, #text-under-logo {
-	color: #9B111E;
+#logo-bis,
+#text-under-logo {
+  color: #9b111e;
 }
 
 #text-under-logo {
-	align-items: center;
-	margin-top: 20px;
-	font-size: x-large;
-
+  align-items: center;
+  margin-top: 20px;
+  font-size: x-large;
 }
 /* SKILLS PAGE */
 
 /* SKILLS PAGE BIS */
 
 #div-sub-2 {
-	display: flex;
-	justify-content: space-around;
-	height: 500px;
-	margin-top: 205px;
-	padding-top: 50px;
-	background-color: #DDDEE6;
-
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  margin-top: 205px;
+  padding-top: 50px;
+  background-color: #dddee6;
 }
 
 #div-skills-title {
-	text-align: center;
-	margin: 20px 0 20px 0;
-	font-size: 40px;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-size: 40px;
 }
 #div-photo {
-
-	height: 430px;
-	width: 350px;
+  height: 430px;
+  width: 350px;
 }
 #div-photo-true {
-	height: 250px;
-	width: 250px;
-	margin: auto;
+  height: 250px;
+  width: 250px;
+  margin: auto;
 }
 #div-photo-text {
-	text-align: center;
-	margin: 15px 0 15px 0;
+  text-align: center;
+  margin: 15px 0 15px 0;
 }
 #div-photo-text a {
-	color: #9B111E;
+  color: #9b111e;
 }
 #div-photo-text a:hover {
-	color: black;
+  color: black;
 }
 #div-skills-bars {
-	
-	height: 300px;
-	width: 600px;
-	min-width: 600px;
-
+  height: 300px;
+  width: 600px;
+  min-width: 600px;
 }
 #bars-all {
-	margin-top: 60px;
-
+  margin-top: 60px;
 }
 #bar-large {
-	
-	height: 25px;
-	display: flex;
-	flex-direction: row; 
-	margin-bottom: 20px;
-	border-radius: 10px;
-	background-color: #ABABAB;
-
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #ababab;
 }
 
 #bar-name {
-	background-color: #ABABAB;
-	width: 100px;
-	padding: 5px ;
-	border-radius: 10px;
-	
-
+  background-color: #ababab;
+  width: 100px;
+  padding: 5px;
+  border-radius: 10px;
 }
 #bar-medium {
-
-	height: 25px;
-
-	
+  height: 25px;
 }
 
 #bar-small-90 {
-	height: 25px;
-	width: 70%;
-	background-color: #9B111E;
+  height: 25px;
+  width: 70%;
+  background-color: #9b111e;
 }
 
 #bar-small-50 {
-	height: 25px;
-	width: 35%;
-	background-color: #9B111E;
+  height: 25px;
+  width: 35%;
+  background-color: #9b111e;
 }
 #bar-small-70 {
-	height: 25px;
-	width: 50%;
-	background-color: #9B111E;
+  height: 25px;
+  width: 50%;
+  background-color: #9b111e;
 }
 #bar-small-20 {
-	height: 25px;
-	width: 20%;
-	background-color: #9B111E;
+  height: 25px;
+  width: 20%;
+  background-color: #9b111e;
 }
-
-
 
 /* SKILLS PAGE BIS */
 
-
-
 /* CARDS PROJECTS  */
 #div-projects {
-	
-	width: 100%;
-	padding-bottom: 80px;
-
+  width: 100%;
+  padding-bottom: 80px;
 }
 
-#cadre{
-	border-style: solid;
-	height: 590px;
-	width: 500px;
-	border-radius: 5px;
-	display: flex;
-	flex-direction: column;
-	background-color: #426A83;
-	padding: 8px 0 8px 0; 
-	margin: auto;
-
+#cadre {
+  border-style: solid;
+  height: 590px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #426a83;
+  padding: 8px 0 8px 0;
+  margin: auto;
+  margin-top: 50px;
 }
 
 #all-cards {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 20px;
-	margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: auto;
 }
 
-#card-head{
-	text-align: center;
-	margin: 0 8px 0 8px;
-	border-radius: 5px;
-	background-color: white;
-	border-width: 1px;
-	border-style: solid;
-
+#card-head {
+  text-align: center;
+  margin: 0 8px 0 8px;
+  border-radius: 5px;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
 }
 
-
-#titre-card{
-	font-size: xx-large;
-	padding: 13px;
-	margin: auto;
+#titre-card {
+  font-size: xx-large;
+  padding: 13px;
+  margin: auto;
 }
 
-
-
-#card-img-3{
-	height: 250px;
-	border-width: 1px;
-	border-style: solid;
-	margin: 8px;
-	border-radius: 8px;
+#card-img-3 {
+  height: 250px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 8px;
+  border-radius: 8px;
 }
 
-
-#card-description{
-	height: 200px;
-	padding: 0 10px 0 10px;
-	margin: 8px;
-	border-width: 1px;
-	border-style: solid;
-	background-color: white;
-	border-radius: 8px;
+#card-description {
+  height: 200px;
+  padding: 0 10px 0 10px;
+  margin: 8px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 8px;
 }
 
 #card-description h5 {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-#card-text{
-	padding: 0px;
-	margin-bottom: 10px;
+#card-text {
+  padding: 0px;
+  margin-bottom: 10px;
 }
-#card-info{
-	display: flex;
-	justify-content: space-between;
-	margin-top: 15px;
+#card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
 #card-info a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-#card-links{
-
-	border-radius: 8px;
-	border: solid;
-
+#card-links {
+  border-radius: 8px;
+  border: solid;
 }
 
-#card-links-1{
-	display: flex;
-	justify-content: space-around;
-	margin-top: 15px;
-	width: 100%;
-	
+#card-links-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 100%;
 }
 
-#logo-index{
-	padding: 5px;
-
+#logo-index {
+  padding: 5px;
 }
-
 
 /* CARDS PROJECTS  */
 
 /* SKILLS SEDONDS  */
 
 #div-activity {
-	background-color: #DDDEE6;
-	padding-bottom: 80px;
+  background-color: #dddee6;
+  padding-bottom: 10px;
 }
 
 #div-activity-index {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #div-list li {
-	font-size: x-large;
-	margin-top: 15px;
+  font-size: x-large;
+  margin-top: 15px;
 }
 
-
-
-
-
+/*  ICON MAIL*/
+#div-photo-text p {
+  position: relative;
+  bottom: 10px;
+  left: 0px;
+  visibility: hidden;
+  color: #9b111e;
+}
