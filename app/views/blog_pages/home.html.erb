@@ -1,19 +1,39 @@
 <div class="container">
-  <h1>BlogPages#home</h1>
+  <h3>
+    Hello mon pti pote !
+  </h3>
 </div>
 
 <br>
 
 <div class="container">
-    <h3>
-      Hello mon pti pote !
-    </h3>
-    <br>
-    <p>Si t'es ici c'est que je t'y ai invité ou que tu as été curieux et observateur.</p>
-    <br>
     <div>
-      <p> Dans tous les cas, bienvenue sur cet espace de partage.</p> 
-      <p>Je vais me faire un peu plaisir et parler de ce que j'aime en rapport avec la programmation et mon activité de Développeur. </p>
+      <div>
+        <p>Si t'es ici c'est que je t'y ai invité ou que tu as été curieux et observateur.</p>
+      </div>
+<br>
+      <div>
+        <p> Dans tous les cas, bienvenue sur cet espace de partage.</p> 
+        <p>Je vais me faire un peu plaisir et parler de ce que j'aime en rapport avec la programmation et mon activité de Développeur. </p>
+      </div>
+<br>
+<br>
+      <div>
+        <p>
+          Je mettrai très certainement à disposition des outils que j'ai développé pour mes differentes activités.
+        </p>
+      </div>
     </div>
+</div>
+
+<div class="container">
+  <div style="border: solid;">
+    <% @all_lessons.each do |lesson|%>
+      <div><%= lesson.number%> </div>
+      <div> <%= lesson.title%> </div>
+      <div> <%= lesson.description%> </div>
+      <div> <%= lesson.url%> </div>
+    <% end %>
+  </div>
 </div>
 

@@ -11,6 +11,7 @@
 
 def destroy
 	Project.destroy_all
+	Lesson.destroy_all
 end
 
 def projects
@@ -45,9 +46,20 @@ def projects
 		description: "Refonte Front. Intégration d'un système de gestion du recrutement")
 end
 
+def lessons
+
+	Lesson.create(title: 'From Bootcamp to Dev', 
+		description: 'Mon parcours après le Bootcamp. La transition avec le CDI', 
+		url: "blog_pages_lesson_1", 
+		number: 1
+	)
+	
+end
+
 def perform
 	destroy
 	projects
+	lessons
 	puts "Seed done"
 end
 
