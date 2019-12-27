@@ -31,7 +31,7 @@
     <div id="div-lessons">
       <% @all_lessons.each do |lesson|%>
         <div id="sub-div-lesson">
-          
+          <h2><%= link_to("Sujet n°#{lesson.number}", "#{lesson.url}") %></h2> 
         </div>
         <div id="sub-div-lesson"> <h3>Titre: <%= lesson.title%></h3> </div>
         <div id="sub-div-lesson">Description:</div>
