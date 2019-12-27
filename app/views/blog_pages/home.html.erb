@@ -27,13 +27,13 @@
 </div>
 
 <div class="container">
-  <div style="border: solid;">
+  <div id="div-lessons">
     <% @all_lessons.each do |lesson|%>
-      <div><%= lesson.number%> </div>
-      <div> <%= lesson.title%> </div>
-      <div> <%= lesson.description%> </div>
-      <div> <%= lesson.url%> </div>
+      <div id="sub-div-lesson"><h2><%= link_to("Sujet n°#{lesson.number}", "#{lesson.url}") %></h2> </div>
+      <div id="sub-div-lesson"> <h3>Titre: <%= lesson.title%></h3> </div>
+      <div id="sub-div-lesson">Description:</div>
+      <div id="sub-div-lesson"><%= lesson.description%> </div>
     <% end %>
-  </div>
+  </>
 </div>
 

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'blog_pages/home'
+  get 'blog_pages/lesson_1'
   
   get 'project/index'
   

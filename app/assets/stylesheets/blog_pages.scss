@@ -1,3 +1,19 @@
 // Place all the styles related to the blog_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  margin: 20px;
+
+  #div-lessons {
+    margin: 40px 0 0 20px;
+    border: solid;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px;
+    
+    #sub-div-lesson {
+      margin-top: 10px;
+    }
+  }
+}

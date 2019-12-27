@@ -50,7 +50,7 @@ def lessons
 
 	Lesson.create(title: 'From Bootcamp to Dev', 
 		description: 'Mon parcours après le Bootcamp. La transition avec le CDI', 
-		url: "blog_pages_lesson_1", 
+		url: "lesson_1", 
 		number: 1
 	)
 	
