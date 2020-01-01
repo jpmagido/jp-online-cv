@@ -201,6 +201,11 @@ header {
   width: 35%;
   background-color: #9b111e;
 }
+#bar-small-60 {
+  height: 25px;
+  width: 40%;
+  background-color: #9b111e;
+}
 #bar-small-70 {
   height: 25px;
   width: 50%;
