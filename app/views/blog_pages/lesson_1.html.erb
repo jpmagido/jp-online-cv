@@ -1,38 +1,64 @@
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-<a class="navbar-brand" <%= link_to 'Home', root_path %> </a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link active" <%= link_to 'Index', blog_pages_home_path %></a>
-    <a class="nav-item nav-link" <%= link_to 'Pré-recquis', anchor: 'pre-recquis-div' %></a>
-    <a class="nav-item nav-link" <%= link_to 'Part 1', anchor: 'part-1-div' %></a>
-    <a class="nav-item nav-link" <%= link_to 'Part 2', anchor: 'part-2-div' %></a>
-    <a class="nav-item nav-link" <%= link_to 'Part 3', anchor: 'part-3-div' %></a>
-    <a class="nav-item nav-link" <%= link_to 'Part 4', anchor: 'part-4-div' %></a>
-    <a class="nav-item nav-link" <%= link_to 'Ressources', anchor: 'ressources-div' %></a>
+  <a class="navbar-brand" <%= link_to 'Home', root_path %> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" <%= link_to 'Index', blog_pages_home_path %></a>
+      <a class="nav-item nav-link" <%= link_to 'Pré-recquis', anchor: 'pre-recquis-div' %></a>
+      <a class="nav-item nav-link" <%= link_to 'Part 1', anchor: 'part-1-div' %></a>
+      <a class="nav-item nav-link" <%= link_to 'Part 2', anchor: 'part-2-div' %></a>
+      <a class="nav-item nav-link" <%= link_to 'Part 3', anchor: 'part-3-div' %></a>
+      <a class="nav-item nav-link" <%= link_to 'Part 4', anchor: 'part-4-div' %></a>
+      <a class="nav-item nav-link" <%= link_to 'Ressources', anchor: 'ressources-div' %></a>
+      
+    </div>
   </div>
-</div>
+  <a ><button onclick="myChoices()" class="btn btn-info">Mes choix !</button></a>
 </nav>
 
 <div class="container-lesson">
 
   <h2 id="pre-recquis-div">LESSON 1: POST BOOTCAMP</h2>
-<br>
+  <br>
   <div>
     <h4>-> Pré_recquis(beginner)</h4>
     <div>
-      <ul>
-        <li>HTML + CSS (+ Javascript)</li>
-        <li>Un langage Back-end || Javascript vers Angular, React ou Vue</li>
+    <div id="split-side-div">
+        <div class="left-side-div">
           <ul>
-            <li>Codewars: avoir réussi plusieurs katas 7 kyu</li>
+            <li>HTML + CSS (+ Javascript)</li>
+            <li>Un langage Back-end || Javascript vers Angular, React ou Vue</li>
+              <ul>
+                <li>Codewars: avoir réussi plusieurs katas 7 kyu</li>
+              </ul>
+            <li>Un framework</li>
+            <li>Savoir apprendre: Avoir compris comment ton cerveau attrape la connaissance</li>
+            <li>Regarder du contenu sans coder en même temps, c'est INTERDIT !!</li>
           </ul>
-        <li>Un framework</li>
-        <li>Savoir apprendre: Avoir compris comment ton cerveau attrape la connaissance</li>
-        <li>Regarder du contenu sans coder en même temps, c'est INTERDIT !!</li>
-      </ul>
+          </div>
+      <div class="middle-side-div">
+        <a class="hidden-answers" >}</a>
+      </div>
+      <div class="right-side-div-small">
+        <a class="hidden-answers">
+          <div id="space-between-div">
+            <div class="first-underline-word"><u>Bootcamp:</u></div>
+            <div> The Hacking Project </div>
+          </div>
+        </a>
+        <a class="hidden-answers">
+          <div id="space-between-div">
+            <div><u>Langage:</u> </div> <div>Ruby</div>
+          </div>
+        </a>
+        <a class="hidden-answers">
+        <div id="space-between-div">
+            <div><u>Framework:</u></div> <div>Ruby On Rails</div>
+        </div>
+        </a>
+      </div>
     </div>
     
     <h3 id="punchline-title"> -->> THE EASY WAY IS THE HARD WAY <<-- </h3>
@@ -61,43 +87,118 @@
             <br>
           <li>Avoir une vision juste et objective du monde du Développement</li>
           <li>Connaitre les différents "business models" viables et leurs avantages / inconvénients</li>
-          <ul>
-            <li>CDI</li>
-            <li>Freelance</li>
-            <li>Entrepreneur</li>
-          </ul>
+          <div id="split-side-div">
+            <div class="left-side-div">
+              <ul>
+                <li>CDI</li> 
+                <li>Freelance</li>
+                <li>Entrepreneur</li>
+              </ul>
+            </div>
+            <div class="middle-side-div">
+              <a class="hidden-answers" >}</a>
+            </div>
+            <div class="right-side-div">
+            <a class="hidden-answers">CDI, Evidement ^^</a>
+            </div>
+          </div>
         </ul>
       </div>
     <h4> -> Penser_stratégie() </h4>
-    <div>
-      <ul>
-        <li>Mes Objectifs: Court / Moyen (/ Long) Terme</li>
-        <li>Mes Envies</li>
-        <li>Mes Points Forts</li>
-      </ul>
+    <div id="split-side-div">
+      <div class="left-side-div">
+        <ul>
+          <li>Mes Objectifs: Court / Moyen (/ Long) Terme</li>
+          <li>Mes Envies</li>
+          <li>Mes Points Forts</li>
+        </ul>
+      </div>
+      <div class="middle-side-div">
+        <a class="hidden-answers" >}</a>
+      </div>
+      <div class="right-side-div-small">
+        <a class="hidden-answers">
+          <div id="space-between-div">
+            <div class="first-underline-word"><u>Objectifs:</u></div>
+            <div> Trouver un job, devenir fort sur Ruby </div>
+          </div>
+        </a>
+        <a class="hidden-answers">
+          <div id="space-between-div">
+            <div><u>Envies:</u> </div> <div>Devenir Développeur</div>
+          </div>
+        </a>
+        <a class="hidden-answers">
+        <div id="space-between-div">
+            <div><u>Points Forts:</u></div> <div>Back-End, Algorithmes</div>
+        </div>
+        </a>
+      </div>
     </div>
     <h4>-> M'organiser()</h4>
     <div>
       <ul>
-        <li>Temps(3..9 mois)</li>
-        <p>Un Bootcamp de 3 mois c'est à peu près 600h; il faut que tu DOUBLES ce nombre (voir plus).</p>
-      
-        <li>Volonté</li>
-          <ul>
-            <li>Êtes-vous certains que vous voulez être Développeur ?</li>
-            <li>Pourquoi ?</li>
-            <li>Front-End vs Back-End</li>
-            <p> -> Pas de full-stack svp !! (Vous n'allez pas être assez spécialisés)</p>
-            <p>NB: Connaitre HTML, CSS(+sass ?) et un peu de JS ce n'est pas être full-stack, c'est être normalement constitué (lol)</p>
-          </ul>
-          
-        <li>Objectifs</li>
-          <ul>
-            <li>Passion ?</li>
-            <li>Lifestyle ?</li>
-            <li>Argent ?</li>
-            <li>Les 3 ?! 🥳 </li>
-          </ul>
+        <div id="split-side-div">
+        <div class="left-side-div">
+          <li>Temps(3..9 mois)</li>
+          <p>Un Bootcamp de 3 mois c'est à peu près 600h;<br> il faut que tu DOUBLES ce nombre (voir plus).</p>
+        </div>
+        <div class="middle-side-div">
+          <a class="hidden-answers" >}</a>
+        </div>
+        <div class="right-side-div-small">
+          <a class="hidden-answers">
+            <div> J'ai codé 600h en 3 mois, comme prévu </div>
+            <div> J'ai signé un CDI au bout de 3.5 mois environ </div>
+          </a>
+        </div>
+        </div>
+        <div id="split-side-div">
+          <div class="left-side-div">
+            <li>Volonté</li>
+              <ul>
+                <li>Êtes-vous certains que vous voulez être Développeur ?</li>
+                <li>Pourquoi ?</li>
+                <li>Front-End vs Back-End</li>
+                <p> -> Pas de full-stack svp !! (Vous n'allez pas être assez spécialisés)</p>
+                <p>NB: Connaitre HTML, CSS(+Sass ?) et un peu de JS ce n'est pas être full-stack,<br> c'est être normalement constitué (lol)</p> 
+              </ul>
+            </div>
+            <div class="middle-side-div">
+              <a class="hidden-answers" >}</a>
+            </div>
+            <div class="right-side-div-small">
+              <a class="hidden-answers">
+                <div> Certain à 100% </div>
+              </a>
+              <a class="hidden-answers">
+                <div>
+                  J'aime le code
+                </div>
+              </a>
+              <a class="hidden-answers">
+              <div>Back-End for Life 😍</div>
+              </a>
+            </div>
+          </div>
+        <div id="split-side-div">
+        <div class="left-side-div">
+          <li>Pourquoi le code ?</li>
+            <ul>
+              <li>Passion ?</li>
+              <li>Lifestyle ?</li>
+              <li>Money ?</li>
+              <li>Les 3 ?! 🥳 </li>
+            </ul>
+            </div>
+        <div class="middle-side-div">
+          <a class="hidden-answers" >}</a>
+        </div>
+        <div class="right-side-div">
+          <a class="hidden-answers">
+            <div> Passion, Lifestyle, Money: Les trois ! </div>
+          </a>
+        </div>
       </ul>
     </div>
   </div>
@@ -107,20 +208,58 @@
     <h4>-> Keep_learning()</h4>
     <div>
       <ul>
-        <li>Mon 1e langage(youtube, *ressources)</li>
-          <ul>
-            <li>Reprendre les bases / combler mes lacunes</li>
-            <li>Me mettre à jour sur les updates technologiques</li>
-            <li>Travailler sur des projets concrets & motivants</li>
-          </ul>
+      <div id="split-side-div">
+        <div class="left-side-div">
+          <li>Mon 1e langage(youtube, *ressources)</li>
+            <ul>
+              <li>Reprendre les bases / combler mes lacunes</li>
+              <li>Me mettre à jour sur les updates technologiques</li>
+              <li>Travailler sur des projets concrets & motivants</li>
+            </ul>
+        </div>
+        <div class="middle-side-div">
+          <a class="hidden-answers" >}</a>
+        </div>
+        <div class="right-side-div">
+          <a class="hidden-answers">
+            <div> Ruby, Ruby On Rails </div>
+          </a>
+        </div>
+      </div>
       <br>
-        <li>Mon 2e langage(youtube, *ressources)</li>
-          <ul>
-            <li>Commencez un second langage (JavaScript reste un excellent choix quoi qu'il arrive)</li>
-            <li>Si JS ne vous dit rien et que vous n'avez pas d'idées, faites comme moi, apprenez SQL</li>
-            <li>Observez les tendances du marché & choisissez un langage complémentaire !!</li>
-            <p>-> Ne pas choisir Python si vous avez déjà Ruby &#128517 (sauf si vous voulez transitionner sur Python)</p>
-          </ul>
+      <div id="split-side-div">
+        <div class="left-side-div">
+          <li>Mon 2e langage(youtube, *ressources)</li>
+            <ul>
+              <li>Commencez un second langage <br>(JavaScript reste un excellent choix quoi qu'il arrive)</li>
+              <li>Si JS ne vous dit rien et que vous n'avez pas d'idées, apprenez SQL</li>
+              <li>Observez les tendances du marché & choisissez un langage complémentaire !!</li>
+              <p>-> Ne pas choisir Python si vous avez déjà Ruby &#128517 <br>(sauf si vous voulez transitionner sur Python: <br>ce qui est en soi une bonne idée 🤣)</p>
+            </ul>
+        </div>
+        <div class="middle-side-div">
+          <a class="hidden-answers" >}</a>
+        </div>
+        <div class="right-side-div-small">
+          <a class="hidden-answers">
+            <div id="space-between-div">
+              <div class="first-underline-word"><u>SQL:</u> </div> <div>MySQL & PostgreSQL</div>
+            </div>
+          </a>
+          <a class="hidden-answers">
+            <div id="space-between-div">
+              <div><u>No_SQL:</u> </div> <div>MongoDB</div>
+            </div>
+            <br>
+            <div id="space-between-div">
+              <div><u>JavaScript:</u> </div> <div>React & Node</div>
+            </div>
+          </a>
+          <a class="hidden-answers">
+            <u>TypeScript</u>
+          </a>
+        </div>
+      </div>
       </ul>
     </div>
 
@@ -174,8 +313,25 @@
       <ul>
         <li>La panoplie du développeur</li>
           <ul>
-            <li>Un Editeur de texte custom (VSCode !! &#128519)</li>
-            <li>Une config décente (-> Apple Store 💸), (Mini: 13 pouces, 4Go RAM)</li>
+          <div id="split-side-div">
+            <div class="left-side-div">
+              <li>Un Editeur de texte custom </li>
+              <li>Une config décente</li>
+            </div>
+            <div class="middle-side-div">
+              <a class="hidden-answers" >}</a>
+            </div>
+            <div class="right-side-div-small">
+              <a class="hidden-answers">
+                <div id="space-between-div">
+                  <div><u>Editeur:</u> </div> <div>Visual Studio Code &#128519</div>
+                </div>
+                <div id="space-between-div">
+                  <div class="first-underline-word"><u>Config:</u> </div> <div>Macbook Pro 13', i7, 16Go RAM 💸💸</div>
+                </div>
+              </a>
+            </div>
+          </div>
           </ul>
       </ul>
     </div>
@@ -245,20 +401,45 @@
           </ul>
       <br>
         <li>Les acteurs</li>
-          <ul>
-            <li>Les cabinets de recrutement</li>
-            <li>Les ESN / SSII</li>
-            <li>Les entreprises (utilisatrices)</li>
-            <li>Les start-ups</li>
-          </ul>
+          <div id="split-side-div">
+            <div class="left-side-div">
+              <ul>
+                <li>Les cabinets de recrutement</li>
+                <li>Les ESN / SSII</li>
+                <li>Les entreprises (utilisatrices)</li>
+                <li>Les start-ups</li>
+              </ul>
+            </div>
+          <div class="middle-side-div">
+            <a class="hidden-answers" >}</a>
+          </div>
+          <div class="right-side-div-small">
+            <a class="hidden-answers">
+              <div>Je suis passé par une ESN</div>
+              <div>Puis le client final a souhaité m'intégrer directement en CDI</div>
+            </a>
+          </div>
+        </div>
       <br>
         <li>Les salaires</li>
-          <ul>
-            <li>Junior: 35-40K/an</li>
-            <li>Confirmé: 45-50K/an // 400€-jour</li>
-            <li>Senior: 60-70K/an // 550-700€/jour</li>
-          </ul>
-      <br>
+          <div id="split-side-div">
+            <div class="left-side-div">
+              <ul>
+                <li>Junior: 35-40K/an</li>
+                <li>Confirmé: 45-50K/an // 400€-jour</li>
+                <li>Senior: 60-70K/an // 550-700€/jour</li>
+              </ul>
+            </div>
+            <div class="middle-side-div">
+              <a class="hidden-answers" >}</a>
+            </div>
+            <div class="right-side-div">
+              <a class="hidden-answers">
+                <div>40K€ brut annuel</div>
+              </a>
+            </div>
+          </div>
+          <br>
         <li>Les contrats</li>
           <ul>
             <li>CDI / CDD</li>
@@ -279,22 +460,54 @@
 
     <h4>-> Réussir un entretien()</h4>
     <div>
-      <ul>
-        <li>Faites-en un maximum</li>
-        <li>Ne vous sous-vendez pas en tant que Junior (35K mini en CDI)</li>
-        <li>Soyez le plus solide possible techniquement, c'est la seule chose que vous pourrez réellement mettre en avant</li>
-        <li>Parlez le même vocabulaire que les recruteurs</li>
-        <li>Insistez pour qu'ils vous testent !!</li>
-      </ul>
+      <div id="split-side-div">
+        <div class="left-side-div">
+          <ul>
+            <li>Faites-en un maximum</li>
+            <li>Ne vous sous-vendez pas en tant que Junior (35K mini en CDI)</li>
+            <li>Soyez le plus solide possible techniquement, <br>c'est la seule chose que vous pourrez réellement mettre en avant</li>
+            <li>Parlez le même vocabulaire que les recruteurs</li>
+            <li>Insistez pour qu'ils vous testent !!</li>
+          </ul>
+        </div>
+        <div class="middle-side-div">
+          <a class="hidden-answers" >}</a>
+        </div>
+        <div class="right-side-div-small">
+          <a class="hidden-answers">
+            <div>~20 Entretiens en 2 mois</div>
+            <br>
+            <div>-> 15 Entretiens ESN / Cabinets</div>
+            <div>-> 5 Entretiens Entreprise</div>
+          </a>
+        </div>
+      </div>
     </div>
 
     <h4>-> Réussir les tests techniques</h4>
     <div>
-      <ul>
-        <li>Codewars (± 5 kyu)</li>
-        <li>HackerRank</li>
-        <li>Utilisez un maximum de Gems / Librairies dans vos projets perso</li>
-      </ul>
+      <div id="split-side-div">
+          <div class="left-side-div">
+            <ul>
+              <li>Codewars (± 5 kyu)</li>
+              <li>HackerRank</li>
+              <li>Utilisez un maximum de Gems / Librairies dans vos projets perso</li>
+            </ul>
+          </div>
+          <div class="middle-side-div">
+            <a class="hidden-answers" >}</a>
+          </div>
+          <div class="right-side-div-small">
+            <a class="hidden-answers">
+              <div>3 sessions de tests en tout</div>
+              <div>-> Création d'un algo complexe</div>
+              <div>-> Intégration front</div>
+              <div>-> Résolution d'algo</div>
+              <br>
+              <div>Fail ne veut pas dire que vous êtes mauvais !</div>
+            </a>
+          </div>
+        </div>
     </div>
   </div>
 
@@ -342,5 +555,18 @@
     </ul>
     <a target="_black" href="https://www.mikedane.com/">MikeDane.com</a>
   </div>
+  <br><br>
+  <div><a ><button onclick="myChoices()" class="btn btn-info">Mes choix !</button></a> <a class="hidden-answers" style="color: #9b111e;">Scroll Up ! </a></div>
+  
+</div>
 </div>
 
+<script>
+function myChoices() {
+  $(".hidden-answers").css("visibility", "visible");
+  $(".right-side-div").css("border", "solid");
+  $(".right-side-div").css("border-width", "thin");
+  $(".right-side-div-small").css("border", "solid");
+  $(".right-side-div-small").css("border-width", "thin");
+}
+</script>

@@ -4,6 +4,10 @@
 
 $font-stack: Comfortaa;
 
+#navbar {
+  font-family: $font-stack;
+}
+
 #navbar a:hover {
   color: #9b111e; 
 }
@@ -46,4 +50,36 @@ $font-stack: Comfortaa;
   #pre-recquis-div {
     color: #9b111e; 
   }
+  #split-side-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left-side-div {
+      
+    }
+    .middle-side-div {
+      color: #9b111e;
+      font-size: 50px;
+    }
+    .right-side-div {
+      padding: 10px;
+      border-radius: 5px;
+      color: #9b111e;
+      font-size: 30px;
+    }
+    .right-side-div-small {
+      padding: 10px;
+      border-radius: 5px;
+      color: #9b111e;
+      font-size: 20px;
+      #space-between-div {
+        display: flex;
+        justify-content: space-between;
+        .first-underline-word {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
 }
+

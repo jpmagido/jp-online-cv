@@ -361,3 +361,7 @@ header {
   color: #9b111e;
 }
 
+.hidden-answers {
+  visibility: hidden;
+  color: #9b111e;
+}
