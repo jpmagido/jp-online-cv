@@ -1,43 +1,40 @@
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" <%= link_to 'Home', root_path %> </a>
+</nav>
+<br> <br>
+
 <div class="container">
   <h3>
     Hello mon pti pote !
   </h3>
 
   <br>
-      <div>
-        <div>
-          <p>Si t'es ici c'est que je t'y ai invité ou que tu as été curieux et observateur.</p>
-        </div>
-  <br>
-        <div>
-          <p> Dans tous les cas, bienvenue sur cet espace de partage.</p> 
-          <p>Je vais me faire un peu plaisir et parler de ce que j'aime en rapport avec la programmation et mon activité de Développeur. </p>
-        <br>
-        </div>
-        <div>
-          <p>En revanche je suis pas là pour te prendre par la main. Si t'es Développeur tu sais te débrouiller par toi-même pour trouver les ressources.</p>
-          <p>L'idée ici est de transmettre les réflexions que j'ai pu avoir. J'aurai parfois aimé m'être posé certaines questions un peu plus tôt.</p>
-        </div>
-  <br>
-  <br>
-        <div>
-          <p>
-            Je mettrai très certainement à disposition des outils que j'ai développé pour mes differentes activités.
-          </p>
-        </div>
-      </div>
+  <div>
+    <div>
+      <p>Si t'es ici c'est que je t'y ai invité ou que tu as été curieux et observateur.</p>
+    </div>
+    <br>
+    <div>
+      <p> Dans tous les cas, bienvenue sur cet espace de partage.</p>
+      <p>Je vais me faire un peu plaisir et parler de ce que j'aime en rapport avec la programmation et mon activité de
+        Développeur. </p>
+      <br>
+    </div>
+    <div>
+      <p>En revanche je suis pas là pour te prendre par la main. Si t'es Développeur tu sais te débrouiller par toi-même
+        pour trouver les ressources.</p>
+      <p>L'idée ici est de transmettre les réflexions que j'ai pu avoir. J'aurai parfois aimé m'être posé certaines
+        questions un peu plus tôt.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+      <p>
+        Je mettrai très certainement à disposition des outils que j'ai développé pour mes differentes activités.
+      </p>
+    </div>
   </div>
   <div class="container">
-    <div id="div-lessons">
-      <% @all_lessons.each do |lesson|%>
-        <div id="sub-div-lesson">
-          <h2><%= link_to("Sujet n°#{lesson.number}", "#{lesson.url}") %></h2> 
-        </div>
-        <div id="sub-div-lesson"> <h3>Titre: <%= lesson.title%></h3> </div>
-        <div id="sub-div-lesson">Description:</div>
-        <div id="sub-div-lesson"><%= lesson.description%> </div>
-      <% end %>
-    </>
+    <%= render partial: "lessons/index", locals: { lessons: @all_lessons } %>
   </div>
-
 </div>

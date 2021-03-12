@@ -1,0 +1,10 @@
+<% lessons.each do |lesson| %>
+  <div id="div-lessons">
+    <div id="sub-div-lesson">
+      <h2><%= link_to("Sujet n°#{lesson.number}", lesson_path(lesson.id)) %></h2>
+    </div>
+    <div id="sub-div-lesson"><h3>Titre: <%= lesson.title %></h3></div>
+    <div id="sub-div-lesson">Description:</div>
+    <div id="sub-div-lesson"><%= lesson.description %> </div>
+  </div>
+<% end %>
